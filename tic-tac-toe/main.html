@@ -1,0 +1,568 @@
+<!doctype html >
+<html lang="en" ng-app="myModule" ng-controller="myController">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="script/angular.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    
+
+    <script>
+
+      function doReset()
+      {
+        location.reload(true);
+      }
+
+      
+
+      $(document).ready(function(){
+
+
+        var count=0;
+
+        $("#1").click(function()
+        {
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+
+          $("#1").unbind();
+          if(count%2==0)
+          {
+            
+            $("#11").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+
+          }else{
+            
+            $("#11").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#2").val()==111 && $("#3").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#5").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#4").val()==111 && $("#7").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+        }
+          
+
+          if($(this).val()==222 && $("#2").val()==222 && $("#3").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#5").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#4").val()==222 && $("#7").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+
+          count++;
+        });
+
+
+        //2
+        $("#2").click(function()
+        {
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+
+
+          $("#2").unbind();
+          if(count%2==0)
+          {
+            
+            $("#22").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#22").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#1").val()==111 && $("#3").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#5").val()==111 && $("#8").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+        }
+          
+
+          if($(this).val()==222 && $("#1").val()==222 && $("#3").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#5").val()==222 && $("#8").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          
+          count++;
+        })
+
+        $("#3").click(function()
+        {
+
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#3").unbind();
+          if(count%2==0)
+          {
+            
+            $("#33").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#33").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#2").val()==111 && $("#1").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#6").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#5").val()==111 && $("#7").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#2").val()==222 && $("#1").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#6").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#5").val()==222 && $("#7").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+
+
+          count++;
+        })
+
+
+        //4
+        $("#4").click(function()
+        {
+
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#4").unbind();
+          if(count%2==0)
+          {
+            
+            $("#44").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#44").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#1").val()==111 && $("#7").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#5").val()==111 && $("#6").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#1").val()==222 && $("#7").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#5").val()==222 && $("#6").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+
+          count++;
+        })
+
+
+        //5
+        $("#5").click(function()
+        {
+
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#5").unbind();
+          if(count%2==0)
+          {
+            
+            $("#55").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#55").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+
+          if($(this).val()==111 && $("#6").val()==111 && $("#4").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#2").val()==111 && $("#8").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#1").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#3").val()==111 && $("#7").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#6").val()==222 && $("#4").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#2").val()==222 && $("#8").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#1").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#3").val()==222 && $("#7").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+
+
+
+
+          count++;
+        })
+
+
+
+        //6
+        $("#6").click(function()
+        {
+
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#6").unbind();
+          if(count%2==0)
+          {
+            
+            $("#66").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#66").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#4").val()==111 && $("#5").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#3").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#4").val()==222 && $("#5").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#3").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+          count++;
+        })
+
+        //7
+        $("#7").click(function()
+        {
+
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#7").unbind();
+          if(count%2==0)
+          {
+           
+            $("#77").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#77").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#1").val()==111 && $("#4").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#8").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#3").val()==111 && $("#5").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#1").val()==222 && $("#4").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#8").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#3").val()==222 && $("#5").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+
+
+
+          count++;
+        })
+
+        //8
+        $("#8").click(function()
+        {
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#8").unbind();
+          if(count%2==0)
+          {
+            
+            $("#88").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#88").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+
+          if($(this).val()==111 && $("#2").val()==111 && $("#5").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#7").val()==111 && $("#9").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#2").val()==222 && $("#5").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#7").val()==222 && $("#9").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+          count++;
+        })
+
+        //9
+        $("#9").click(function()
+        {
+          if($("#idd1").val()=="" || $("#idd2").val()==""){
+          alert("INPUT THE NAME FIRST..!!!");
+          return;
+          }
+          $("#9").unbind();
+          if(count%2==0)
+          {
+            
+            $("#99").addClass("fa-xmark").removeClass("fa-o");
+            $(this).val(111);
+
+          }else{
+            
+            $("#99").addClass("fa-o").removeClass("fa-xmark");
+            $(".fa-o").css("color","white");
+            $(this).val(222);
+          }
+
+          if($(this).val()==111 && $("#3").val()==111 && $("#6").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#7").val()==111 && $("#8").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==111 && $("#1").val()==111 && $("#5").val()==111){
+          alert("Player 1 wins");
+          location.reload(true);
+          }
+
+          if($(this).val()==222 && $("#3").val()==222 && $("#6").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#7").val()==222 && $("#8").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+          else if($(this).val()==222 && $("#1").val()==222 && $("#5").val()==222){
+          alert("Player 2 wins");
+          location.reload(true);
+          }
+
+          count++;
+        
+        })
+
+
+      });
+
+      var module=angular.module("myModule",[]);
+      module.controller("myController",function($scope)
+      {
+        $scope.i1="";
+        $scope.i2="";
+        $scope.doCheck=function()
+        {
+          $scope.i1=$scope.spp;
+          $scope.i2=$scope.jpp;
+        
+        }
+      });
+    </script>
+
+    <style>
+      #idd1:hover{
+        transition: ease all 2s;
+        transform: scale(1.2);
+        
+      }
+
+      #idd2:hover{
+        transition: ease all 2s;
+        transform: scale(1.2);
+
+      }
+
+    </style>
+  </head>
+  <body style="background-color: lightblue; overflow: hidden; background-image: url();  background-position: inherit;">
+
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="pic/gaming.png" alt="Bootstrap" width="55" height="50" style="margin-left: -25px;"><font style="font-weight: bolder; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; font-style: oblique; color: brown;">X&0</font>
+        </a>
+
+        <i class="fa-brands fa-studiovinari fa-bounce fa-2xl" style="margin-right: -20px;"></i><input id="idd1" class="form-control me-2" ng-model="spp" type="search" placeholder="Enter player A name" aria-label="Search" style="width: 300px; background-color: darkgrey; transition: ease all 2s;" autofocus>
+        <i class="fa-brands fa-studiovinari fa-bounce fa-2xl" style="margin-right: -20px;"></i><input id="idd2" class="form-control me-2" ng-model="jpp" type="search" placeholder="Enter player B name" aria-label="Search" style="width: 300px; background-color: darkgray; transition: ease all 2s;" >
+        <button type="button" class="btn btn-info" ng-click="doCheck()">Click here</button>
+      </div>
+    </nav>
+
+    
+
+
+    <div style="margin-top: 100px;">
+      <span id="sp1"  style="font-size: larger; margin-left: 40px; font-weight: bold; font-size: x-large; color: grey;"  ><font style="color: cornsilk; font-weight: bold; font-size: x-large; font-variant: small-caps; ">Player A:</font>{{i1}}</span>
+    </div>
+
+    <div style="margin-top: 0px;">
+      <span id="sp2"  style="font-size: x-large; margin-left: 1000px; color: grey; font-weight: bold;"><font style="color: cornsilk; font-weight: bold; font-size: x-large; font-variant: small-caps;">Player B:</font>{{i2}} </span>
+    </div>
+
+    <div class="container " style="margin-left:450px ;" >
+    <table style="background-color:grey; color: grey; " >
+      <tr>
+        <td id="1" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87); border-right: 10px solid rgb(46,139,87); background-color:rgb(32,178,170) ; "><i style="margin-left: 25px;" class="fa-solid fa-2xl fa-flip"  id="11"></i></td>
+        <td id="2" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87); border-right: 10px solid rgb(46,139,87); background-color:rgb(32,178,170) ;"><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="22"></i></td>
+        <td id="3" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87);  background-color:rgb(32,178,170);"><i class="fa-solid  fa-2xl fa-flip"  style="margin-left: 25px;" id="33"></i></td>
+      </tr>
+      <tr>
+        <td id="4" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87); border-right: 10px solid rgb(46,139,87); background-color: rgb(32,178,170); "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="44"></i></td>
+        <td id="5" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87); border-right: 10px solid rgb(46,139,87); background-color:rgb(32,178,170) ; "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="55"></i></td>
+        <td id="6" style="width: 90px ; height: 85px; border-bottom: 10px solid rgb(46,139,87);  background-color: rgb(32,178,170); "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="66"></i></td>
+      </tr>
+      <tr> 
+        <td id="7" style="width: 90px ; height: 85px;  border-right: 10px solid rgb(46,139,87); background-color:rgb(32,178,170) ; "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="77"></i></td>
+        <td id="8" style="width: 90px ; height: 85px;  border-right: 10px solid rgb(46,139,87); background-color: rgb(32,178,170); "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="88"></i></td>
+        <td id="9" style="width: 90px ; height: 85px;   background-color:rgb(32,178,170) ; "><i class="fa-solid  fa-2xl fa-flip" style="margin-left: 25px;" id="99"></i></td>
+      </tr>
+    </table>
+  </div>
+
+  <button type="button" onclick="doReset()" class="btn btn-info" style="margin-left: 535px; margin-top: 20px;">Click to reset</button>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
